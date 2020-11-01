@@ -1,0 +1,160 @@
+.logo {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+.logoimg {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 170px;
+    transform: translate(-50%,0);
+    transition: 0.8s ease;
+    z-index: 1;;
+}
+.logoimg:hover {
+    opacity: 0.8;
+    transition: 0.8s ease;
+}
+.btn {
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    height: 45px;
+    width: 45px;
+    background: #1b1b1b;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: right 0.5s ease;
+}
+.btn.click {
+    right: 250px;
+
+}
+.btn span {
+    color: #fff;
+    font-size: 28px;
+    line-height: 45px;
+}
+.btn span:hover {
+    transition:  0.5s ease;
+    color:#EF0C23;
+}
+.btn.click span:before {
+    content: '\f00d';
+}
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    right: -250px;
+    background: rgba(255,255,255,.2);
+    transition: right 0.4s ease;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.sidebar.show {
+    right: 0;
+    z-index: 1;
+}
+.sidebar .text {
+    color: black;
+    font-size: 25px;
+    line-height: 65px;
+    text-align: center;
+    background:rgba(255,255,255,.2);
+    letter-spacing: 1px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+nav ul {
+    background:rgba(255,255,255,.2);;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+    border-right: 3px solid rgba(255,255,255,0.1);
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    transition:  0.5s ease;
+}
+nav ul li a:hover {
+    color:#EF0C23;
+    border-right-color:#EF0C23;
+    transition: right 0.5s ease;
+}
+.img img {
+    position: relative;
+    margin-top: 60px;
+    max-width: 100%;
+    width: 100%;
+    opacity: 0.6;
+    transition:  0.5s ease;
+}
+.img img:hover {
+    opacity: 1;
+    transition:  0.5s ease;
+}
+.htext {
+    position: absolute;
+    font-size: 55px;
+    color: #EF0C23;
+    left: 150px;
+    top:200px;
+    transition:  0.5s ease;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+.htext:hover {
+    font-size: 55px;
+    color: #fff;
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
+    transition:  0.5s ease;
+}
+.home {
+    position: absolute;
+    top: 270px;
+    left: 150px;
+    font-size: 35px;
+    color: #fff;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    transition: all 0.7s ease;
+}
+.home:hover {
+    transition: all 0.7s ease;
+    color: #EF0C23;
+}
+.button1 {
+    position: absolute;
+    top: 360px;
+    left: 147px;
+}
+.button{
+	font-size: 16px;
+	font-family: "BPG Banner Caps", sans-serif;
+
+	font-weight: 500;
+	padding: 12px 35px;
+	color: #ffffff;
+	border-radius: 40px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	display: inline-block;
+	white-space: nowrap;
+	border: none;
+    cursor: pointer;
+    background: #EF0C23;
+}
+.button:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
