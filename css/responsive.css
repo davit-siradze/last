@@ -1,3 +1,53 @@
+@media screen and (max-width: 860px) {
+    .htext {
+    position: absolute;
+    font-size: 40px;
+    color: #EF0C23;
+    left: 150px;
+    top: 200px;
+    transition: 0.5s ease;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    }
+    .home {
+        font-size: 24px;
+        top: 250px;
+        left: 150px;
+    }
+    .button {
+        font-size: 14px;
+        position: relative;
+        top: -50px;
+        padding: 10px 30px;
+        font-family: "BPG Nino Mtavruli Bold", sans-serif;
+    }
+}
+@media screen and (max-width: 780px) {
+    .htext {
+        font-size: 35px;
+        top: 180px;
+    }
+    .home {
+        font-size: 22px;
+        top: 220px;
+    }
+    .button {
+        top: -75px;
+    }
+}
+@media screen and (max-width: 670px) {
+    span.one {
+        width: 30px;
+    }
+    span.two {
+        width: 30px;
+    }
+    span.three {
+        display: none;
+    }
+    .htext {
+        top: 160px;
+    }
+}
 @media screen and (max-width: 620px) {
     .align > li {
         width: 100%;
@@ -28,25 +78,6 @@
     .img img {
         margin-top: 40px;
     }
-    .htext {
-        font-size: 30px;
-        left: 101px;
-        top: 101px;
-    }
-    .htext:hover {
-        font-size: 33px ;
-    }
-    .home {
-        top: 135px;
-        left: 101px;
-        font-size: 22px;
-    }
-    .button {
-        font-size: 10px;
-    }
-    .button1 {
-        top: 190px;
-        left: 101px;
-    }
+    
 } 
 
