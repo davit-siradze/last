@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
+    <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-bold/css/bpg-nino-mtavruli-bold.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://kit.fontawesome.com/97ad557998.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+</head>
+<body>
+<body>
+    <div class="toggle-btn">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+   </div>
+
+   <div class="menu">
+        <div class="data">
+             <ul class="ulmen">
+                  <li class="navname">ნავიგაცია</li>
+                  <li class="nav-li"><a class="a1" href="index.html">მთავარი</a></li>
+                  <li class="nav-li"><a class="a1" href="#">სერვისი</a></li>
+                  <li class="nav-li"><a class="a1" href="#">ისტორია</a></li>
+                  <li class="nav-li"><a class="a1" href="#">კონტაქტი</a></li>
+                  <li class="flag">
+                    <h4 class="flagh4">ენის განსაზღვრა</h4>
+                     <a href="index.html"> <img class="geo" src="img/flag/geo.svg" alt=""></a>
+                     <a href="eng.html" target="_blank"> <img class="eng" src="img/flag/eng.png" alt=""></a>
+                    
+                  </li>
+             </ul>
+        </div>
+   </div>
+
+
+  <div class="cotn_principal">
+<div class="cont_centrar">
+
+  <div class="cont_login">
+<div class="cont_info_log_sign_up">
+  <!-- LOGIN -->
+      <div class="col_md_login">
+<div class="cont_ba_opcitiy">
+        
+        <h2>შესვლა</h2>  
+  <p>პროფილზე შესვლა.</p> 
+  <button class="btn_login" onclick="cambiar_login()">შესვლა</button>
+  </div>
+  </div>
+    <!-- SIGNUP -->
+<div class="col_md_sign_up">
+<div class="cont_ba_opcitiy">
+  <h2>რეგისტრაცია</h2>
+
+  
+  <p>გაიარე რეგისტრაცია</p>
+
+  <button class="btn_sign_up" onclick="cambiar_sign_up()">რეგისტრაცია</button>
+</div>
+  </div>
+       </div>
+
+    
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       <img src="/img/banner.jpg" alt="" />
+       </div>
+       
+    </div>
+    <!-- Анимированные LOGIN и SIGNUP после нажатия на кнопку -->
+<div class="cont_forms" >
+    <div class="cont_img_back_">
+       <img src="/img/banner.jpg" alt="" />
+       </div>
+ <div class="cont_form_login">
+<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+   <h2>LOGIN</h2>
+ <input type="text" placeholder="Email" />
+<input type="password" placeholder="Password" />
+<button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+  </div>
+  
+   <div class="cont_form_sign_up">
+<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+     <h2>SIGN UP</h2>
+<input type="text" placeholder="Email" />
+<input type="text" placeholder="User" />
+<input type="password" placeholder="Password" />
+<input type="password" placeholder="Confirm Password" />
+<button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+
+  </div>
+
+    </div>
+    
+  </div>
+ </div>
+</div>
+  
+    <script src="java/login.js"></script>
+    <script>
+        
+var t1 = new TimelineMax({paused: true});
+
+t1.to(".one", 0.8, {
+   y: 6,
+   rotation: 45,
+   ease: Expo.easeInOut
+});
+t1.to(".two", 0.8, {
+   y: -6,
+   rotation: -45,
+   ease: Expo.easeInOut,
+   delay: -0.8
+});
+ 
+t1.to(".menu", 2, {
+   top: "0%",
+   ease: Expo.easeInOut,
+   delay: -2
+});
+
+t1.staggerFrom(".menu ul li", 1.3, {x: -200, opacity: 0, ease:Expo.easeOut}, 0.1);
+
+t1.reverse();
+$(document).on("click", ".toggle-btn", function() {
+   t1.reversed(!t1.reversed());
+});
+$(document).on("click", "a1", function() {
+   t1.reversed(!t1.reversed());
+   
+});
+    </script>
+
+</body>
+</body>
+</html>

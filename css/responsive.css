@@ -4,19 +4,22 @@
     font-size: 40px;
     color: #EF0C23;
     left: 150px;
-    top: 200px;
+    top: 160px;
     transition: 0.5s ease;
     font-family: "BPG Nino Mtavruli", sans-serif;
     }
+    .htext:hover {
+        font-size: 44px ;
+    }
     .home {
         font-size: 24px;
-        top: 250px;
+        top: 200px;
         left: 150px;
     }
     .button {
         font-size: 14px;
         position: relative;
-        top: -50px;
+        top: -100px;
         padding: 10px 30px;
         font-family: "BPG Nino Mtavruli Bold", sans-serif;
     }
@@ -25,6 +28,9 @@
     .htext {
         font-size: 35px;
         top: 180px;
+    }
+    .htext:hover {
+        font-size: 38px ;
     }
     .home {
         font-size: 22px;
@@ -46,6 +52,12 @@
     }
     .htext {
         top: 160px;
+    }
+    .htext:hover {
+        font-size: 40px ;
+    }
+    .button {
+        top: -85px;
     }
 }
 @media screen and (max-width: 620px) {
@@ -78,6 +90,41 @@
     .img img {
         margin-top: 40px;
     }
+
     
 } 
-
+@media screen and (max-width: 580px) {
+    .htext {
+        top: 145px;
+        font-size: 33px;
+    }
+    .htext:hover {
+        font-size: 35px ;
+    }
+    .home {
+        font-size: 20px;
+        top: 185px;
+    }
+    .button{
+        top: -115px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 535px) {
+    .htext {
+        top: 130px;
+        font-size: 30px;
+        left: 130px;
+    }
+    .htext:hover {
+        font-size: 33px ;
+    }
+    .home {
+        top: 165px;
+        left: 130px;
+    }
+    .button {
+        top: -140px;
+        left: -20px;
+    }
+}

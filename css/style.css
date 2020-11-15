@@ -16,6 +16,27 @@
     margin-left: auto;
     margin-right: auto;
 }
+.login {
+    display: flex;
+    position: absolute;
+}
+.youaracc {
+    color: #EF0C23;
+    position: relative;
+}
+.acca i{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+    color: #EF0C23;
+    transition: 0.2s ease;
+}
+.account:hover {
+    font-size: 22px;
+    color: #ff3449;
+    transition: 0.2s ease;
+}
 /* Menu */
 .toggle-btn {
     position: fixed;
@@ -269,4 +290,107 @@ ul {
     color: #000;
     font-family: "BPG Nino Mtavruli ", sans-serif;
     box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #ff3449;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'BPG Nino Mtavruli';
+}
+.footerinfo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+}
+.fbox {
+    margin: 75px 0px 0 0px;
+}
+.fbox h2 {
+    font-size: 30px;
+    color: #ffffffad;
+    font-family: 'BPG Nino Mtavruli Bold'
+}
+.fbox p{
+    color: #fff;
+    width: 280px;
+    margin: 25px 0;
+    font-family: 'BPG Nino Mtavruli';
+}
+.fcont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+.fcont p {
+    color: #ffffffad;
+    font-family: 'BPG Nino Mtavruli Bold';
+    font-size: 30px;
+}
+.contnav {
+    width: 210px;
+    display: flex;
+    margin-top: 16px;
+}
+.mail {
+    color: #fff;
+}
+.fmail {
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: 'BPG Nino Mtavruli';
+    color: #fff;
+}
+.fcontmail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+.social p {
+    font-size: 30px;
+    color: #ffffffad;
+    font-family: 'BPG Nino Mtavruli Bold'
+}
+.soc {
+    width: 210px;
+    display: flex;
+    margin-top: 16px;
+}
+.fab {
+    color: #fff;
+    font-size: 15px;
+}
+.soca {
+    margin-top: 3px;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 15px;
 }
