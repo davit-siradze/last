@@ -9,13 +9,17 @@
     position: absolute;
     width: 100%;
     height: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
-  background: #aac4bc; /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  #aac4bc 0%, #eca8a8 100%, #eed5a9 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  #aac4bc 0%,#eca8a8 100%,#eed5a9 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #aac4bc 0%,#eca8a8 100%,#eed5a9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', endColorstr='#b0bec5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-image: url("https://geotripadvisor.files.wordpress.com/2015/02/hottours_6984280_georgia-tbilisi_00448490-copy1.jpg");
   
+  }
+  .cotn_principal::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(0 0 0 / 32%);
   }
   /* Menu */
   .toggle-btn {
@@ -24,35 +28,52 @@
     width: 40px;
     height: 12px;
     right: 0;
-    z-index: 4;
+    z-index: 8;
     cursor: pointer;
+    margin-right: 40px;
 }
-
+.logo{
+  height: 68px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  
+}
+.logo img{
+  display: flex;
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,0);
+  margin-left: auto;
+  margin-right: auto;
+}
 span.one {
     position: absolute;
     width: 40px;
     height: 2px;
-    background: black;
+    background:#fff;
 }
 
 span.two {
     position: absolute;
     width: 40px;
     height: 2px;
-    background: black;
+    background: #fff;
     margin-top: 12px;
 }
 span.three {
     position: absolute;
     width: 30px;
     height: 2px;
-    background: black;
+    background: #fff;
     margin-left: 10px;
     margin-top: 24px;
 }
 
 .menu {
-    z-index: 2;
+    z-index: 6;
     position: fixed;
     background: #0000007a;
     height: 100%;
@@ -458,4 +479,7 @@ ul {
     margin: 10px;
     margin-left: 30px;
     font-family: "BPG Nino Mtavruli Bold", sans-serif;
+  }
+  .material-icons {
+    color: #fff;
   }
