@@ -1,42 +1,16 @@
-* {
-    margin: 0px auto;
-    padding: 0px;
-    text-align: center;
-    font-family: "BPG Nino Mtavruli", sans-serif;
-  }
-  
-  .cotn_principal {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://geotripadvisor.files.wordpress.com/2015/02/hottours_6984280_georgia-tbilisi_00448490-copy1.jpg");
-  
-  }
-  .cotn_principal::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgb(0 0 0 / 32%);
-  }
-  /* Menu */
-  .toggle-btn {
-    position: fixed;
-    margin: 1.4em;
-    width: 40px;
-    height: 12px;
-    right: 0;
-    z-index: 8;
-    cursor: pointer;
-    margin-right: 40px;
+body{
+  font-family: "BPG Nino Mtavruli Bold", sans-serif;;
+	margin:0;
+	line-height: 1.5;
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
 }
 .logo{
-  height: 68px;
   width: 100%;
   position: absolute;
-  z-index: 2;
   
 }
 .logo img{
@@ -49,437 +23,337 @@
   margin-left: auto;
   margin-right: auto;
 }
+.login {
+  display: flex;
+  position: absolute;
+}
+.youaracc {
+  color: #EF0C23;
+  position: relative;
+}
+.acca i{
+  font-size: 20px;
+  margin-top: 25px;
+  margin-left: 25px;
+  cursor: pointer;
+  color: #EF0C23;
+  transition: 0.2s ease;
+}
+.account:hover {
+  font-size: 22px;
+  color: #ff3449;
+  transition: 0.2s ease;
+}
+/* Menu */
+.toggle-btn {
+  position: fixed;
+  margin: 1.4em;
+  width: 40px;
+  height: 12px;
+  right: 0;
+  z-index: 4;
+  cursor: pointer;
+}
+
 span.one {
-    position: absolute;
-    width: 40px;
-    height: 2px;
-    background:#fff;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: black;
 }
 
 span.two {
-    position: absolute;
-    width: 40px;
-    height: 2px;
-    background: #fff;
-    margin-top: 12px;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: black;
+  margin-top: 12px;
 }
 span.three {
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background: #fff;
-    margin-left: 10px;
-    margin-top: 24px;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: black;
+  margin-left: 10px;
+  margin-top: 24px;
 }
 
 .menu {
-    z-index: 6;
-    position: fixed;
-    background: #0000007a;
-    height: 100%;
-    width: 100%;
-    top: -100%;
+  z-index: 2;
+  position: fixed;
+  background: #0000007a;
+  height: 100%;
+  width: 100%;
+  top: -100%;
 }
 
 .data {
-    padding: 8em 0 0 2em;
-    text-align: left;
+  padding: 8em 0 0 2em;
+  text-align: left;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .navname {
-    color: #fff;
-    font-family: "BPG Nino Mtavruli Bold", sans-serif;
-    font-size: 22px;
-    text-align: center;
+  color: #fff;
+  font-family: "BPG Nino Mtavruli Bold", sans-serif;
+  font-size: 22px;
+  text-align: center;
 }
 
 .nav-li {
-    color: #fff;
-    font-size: 42px;
-    text-align: center;
-    margin-top: 14px;
-    
+  color: #fff;
+  font-size: 42px;
+  text-align: center;
+  margin-top: 14px;
+  
 }
 .a1:hover {
-    color: #ef0c2391;
-    transition: all ease 0.6s;
-    font-family: "BPG Nino Mtavruli Bold", sans-serif;
+  color: #ef0c2391;
+  transition: all ease 0.6s;
+  font-family: "BPG Nino Mtavruli Bold", sans-serif;
 }
 .flagh4 {
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    margin-top: 13px;
-    font-family: "BPG Nino Mtavruli Bold", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: 13px;
+  font-family: "BPG Nino Mtavruli Bold", sans-serif;
 }
 .geo {
-    position: absolute;
-    width: 60px;
-    top: 0%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    margin-right: auto;
-    margin-top: 50px;
-    opacity: 0.7;
-    transition: 0.6s ease-in-out;
+  position: absolute;
+  width: 60px;
+  top: 0%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: auto;
+  margin-top: 50px;
+  opacity: 0.7;
+  transition: 0.6s ease-in-out;
 }
 .eng {
-    position: absolute;
-    width: 60px;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    margin-left: 60px;
-    margin-right: auto;
-    margin-top: 35px;
-    opacity: 0.7;
-    transition: 0.6s linear;
+  position: absolute;
+  width: 60px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  margin-left: 60px;
+  margin-right: auto;
+  margin-top: 35px;
+  opacity: 0.7;
+  transition: 0.6s linear;
 }
 .geo:hover, .eng:hover {
-    opacity: 1;
-    transition: 0.6s linear;
-    width: 70px;
+  opacity: 1;
+  transition: 0.6s linear;
+  width: 70px;
 }
 .a1 {
-    text-decoration: none;
-    color: #fff;
-    font-family: "BPG Nino Mtavruli Bold", sans-serif;
-    transition: all ease 0.6s;
+  text-decoration: none;
+  color: #fff;
+  font-family: "BPG Nino Mtavruli Bold", sans-serif;
+  transition: all ease 0.6s;
 }
 .a1:hover {
-    color: #ef0c2391;
-    transition: all ease 0.6s;
+  color: #ef0c2391;
+  transition: all ease 0.6s;
 }
-  
-  .cont_centrar {
-    position: relative;
-    float: left;
-    width: 100%;
-    margin-top: 150px;
-        
-  }
-  
-  .cont_login {
-    position: relative;
-    width: 640px;
-    left: 50%;
-    margin-left: -320px;
-    
-  }
-  
-  .cont_back_info {  
-    position: relative;
-    float: left;
-    width: 640px;
-    height: 280px;
-     overflow: hidden;
-    background-color: #fff;
-    margin-top: 100px;
-     box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
-  }
-  
-  .cont_forms {
-    position: absolute;
-    overflow: hidden;
-    top:100px;
-    left: 0px;
-    width: 320px;
-    height: 280px;
-    background-color: #eee;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-  
-  .cont_forms_active_login {
-    box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
-    height: 420px;  
-    top:20px;
-    left: 0px;
-    -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  
-  }
-  
-  .cont_forms_active_sign_up {
-    box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
-    height: 420px;  
-    top:20px;
-    left:320px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  
-  .cont_img_back_grey {
-    position: absolute;
-    width: 950px;
-    top:-80px;
-    left: -116px;
-  }
-  
-  .cont_img_back_grey > img {
-    width: 100%;
-   -webkit-filter: grayscale(100%);     filter: grayscale(100%);
-    opacity: 0.2;
-    animation-name: animar_fondo;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  
-  }
-  
-  .cont_img_back_ {
-    position: absolute;
-    width: 950px;
-    top:-80px;
-    left: -116px;
-  }
-  
-  .cont_img_back_ > img {
-    width: 100%;
-  opacity: 0.6;
-  animation-name: animar_fondo;
-  animation-duration: 20s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  }
-  
-  .cont_forms_active_login > .cont_img_back_ {
-  top:0px;  
-    -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-  
-  .cont_forms_active_sign_up > .cont_img_back_ {
-  top:0px;  
-  left: -435px;
-    -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-   
-  
-  .cont_info_log_sign_up {
-  position: absolute;
-    width: 640px;
-    height: 280px;
-    top: 100px;
-  z-index: 1;
-  } 
-  
-  .col_md_login {
-    position: relative;
-    float: left;
-    width: 50%;
-  }
-  
-  .col_md_login > h2 {
-    font-weight: 400;
-  margin-top: 70px;
-      color: #757575;
-  }
-  
-  .col_md_login > p {
-   font-weight: 400;
-  margin-top: 15px;
-  width: 80%;
-      color: #37474F;
-  }
-  
-  .btn_login { 
-  background-color: #FF9800;
-    border: none;
-    padding: 10px;
-  width: 200px;
-  border-radius:3px;
-  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
-    color: #fff;
-  margin-top: 10px;
-  cursor: pointer;
-  }
-  
-  .col_md_sign_up {
-    position: relative;
-    float: left;
-    width: 50%;  
-  }
-  
-  .cont_ba_opcitiy > h2 {
-    color: #fff;
-    font-family: "BPG Nino Mtavruli";
-  }
-  
-  .cont_ba_opcitiy > p {
-    font-family: "BPG Nino Mtavruli";
-   margin-top: 15px;
-   color: #fff;
-  }
- 
-  .cont_ba_opcitiy {
-    position: relative;
-    background-color: rgba(187, 168, 170, 0.79);
-    width: 80%;
-    border-radius:3px ;
-    margin-top: 60px;
-    padding: 15px 0px;
-    margin-left: 30px;
-  }
-  
-  .btn_sign_up { 
-  background-color: #f44336;
-    border: none;
-    padding: 10px;
-  width: 200px;
-  border-radius:3px;
-  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
-    color: #fff;
-  margin-top: 10px;
-  cursor: pointer;
-  }
-  .cont_forms_active_sign_up {
-  z-index: 2;  
-  }
-  
-  
-  @-webkit-keyframes  animar_fondo {
-    from { -webkit-transform: scale(1) translate(0px);
-  -moz-transform: scale(1) translate(0px);
-  -ms-transform: scale(1) translate(0px);
-  -o-transform: scale(1) translate(0px);
-  transform: scale(1) translate(0px); }
-    to { -webkit-transform: scale(1.5) translate(50px);
-  -moz-transform: scale(1.5) translate(50px);
-  -ms-transform: scale(1.5) translate(50px);
-  -o-transform: scale(1.5) translate(50px);
-  transform: scale(1.5) translate(50px); }
-  }
-  @-o-keyframes identifier {
-    from { -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1); }
-    to { -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5); }
-  
-  }
-  @-moz-keyframes identifier {
-    from { -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1); }
-    to { -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5); }
-  
-  }
-  @keyframes identifier {
-    from { -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1); }
-    to { -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5); }
-  }
-  .cont_form_login {
-    position: absolute;
-    opacity: 0;
-  display: none;
-    width: 320px;
-    -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-  
-  .cont_forms_active_login {
-  z-index: 2;  
-  }
+.login-page{
+	min-height: 100vh;
+	padding:15px;
+	background-color: #eeeeee;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.login-page .box{
+	background-image: url('../img/banner1.jpg');
+	background-size: cover;
+	background-position: -160px center;
+	background-repeat: repeat-x;
+	flex:0 0 700px;
+	max-width: 700px;
+	min-height: 480px;
+	box-shadow: 0 0 10px #dddddd;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 1;
+	transition: all 0.5s ease-in-out;
+}
+.login-page .box.slide-active{
+	background-position:160px center;
+}
 
-  .cont_form_sign_up {
-    position: absolute;
-    width: 320px;
-  float: left;
-    opacity: 0;
-  display: none;
-    -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  }
-  
-    
-  .cont_form_sign_up > input {
-    text-align: left;
-    padding: 15px 5px;
-    margin-left: 10px;
-    margin-top: 20px;
-    width: 260px;
-    border: none;
-    color: #757575;
-  }
-  
-  .cont_form_sign_up > h2 {
-    margin-top: 50px; 
+.login-page .box::before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+	background-color: rgba(0,0,0,0.4);
+}
+.login-page .box .left,
+.login-page .box .right{
+  flex:0 0 50%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:40px 0;
+}
+
+.login-page .box .left h3,
+.login-page .box .right h3{
+	font-size: 20px;
+	color:#ffffff;
+	margin:0 0 15px;
+}
+
+.login-page .box .left .register-btn,
+.login-page .box .right .login-btn{
+  background-color: transparent;
+  padding: 10px 35px;
+  color:#ffffff;
+  border:1px solid #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.login-page .box .left .register-btn:focus,
+.login-page .box .right .login-btn:focus{
+  outline: none;
+}
+.login-page .box .form{
+	position: absolute;
+	background-color: #ffffff;
+	height: 100%;
+	width: 50%;
+	right:0;
+	top:0;
+	padding:30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: all 0.5s ease-in-out;
+}
+.login-page .box.slide-active .form{
+	right: 50%;
+}
+
+
+.login-page .box .form h3{
+	font-size: 20px;
+	color:#000000;
+  margin:0 0 30px;
+  font-family: "BPG Nino Mtavruli Bold", sans-serif;
+}
+
+.login-page .box .form .form-group{
+	margin-bottom: 20px;
+}
+
+.login-page .box .form .lost-password-form,
+.login-page .box .form .login-form,
+.login-page .box .form .register-form{
+  transition: all 0.5s ease-in-out;
+} 
+
+.login-page .box .form .form-control{
+	width: 100%;
+	height: 45px;
+	font-size: 16px;
+	color:#000000;
+	border:none;
+	border-bottom:1px solid #cccccc;
+	padding:0;
+}
+.login-page .box .form .form-control:focus{
+	outline: none;
+}
+.login-page .box .form label{
+	font-size: 16px;
+	color:#555555;
+}
+.login-page .box .form .submit-btn{
+	width: 100%;
+	height: 40px;
+	background-color: #E91E63;
+	border:none;
+	border-radius: 20px;
+	color:#ffffff;
+	text-transform: uppercase;
+	margin-top:10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.login-page .box .form .submit-btn:focus{
+	outline: none;
+}
+.login-page .box .form p{
+  margin-top:20px;
+  text-align: center;
+}
+.login-page .box .form h5{
+	font-size: 16px;
+	color:#555555;
+	margin:0 0 30px;
+	font-weight: normal;
+}
+
+.login-page .box .form p a{
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+	color:#3f51b5;
+}
+
+.login-page .box .form .form-hidden{
+	max-height: 0;
+	visibility: hidden;
+	opacity:0;
+	overflow:hidden;
+}
+
+
+/*responsive*/
+
+@media(max-width: 767px){
+   .login-page .box{
+   	 flex:0 0 100%;
+   	 max-width: 100%;
+   }
+}
+@media(max-width: 575px){
+	.login-page .box .form{
+		width: 100%;
+		position: relative;
+		right: auto;
+		top:auto;
+		height: auto;
+	}
+	.login-page .box,
+	.login-page .box.slide-active{
+        background-position: center;
+	}
+	.login-page .box .left h3, .login-page .box .right h3{
+    font-size: 16px;
     font-family: "BPG Nino Mtavruli Bold", sans-serif;
-    color: #757575;
-  }
-  
-  
-  .cont_form_login > input {
-    padding: 15px 5px;
-    margin-left: 10px;
-    margin-top: 20px;
-    width: 260px;
-    border: none;
-    text-align: left;
-    color: #757575;
-  }
-  
-  .cont_form_login > h2 {
-    margin-top: 110px; 
-    font-family: "BPG Nino Mtavruli Bold", sans-serif;
-    color: #757575;
-  }
-  .cont_form_login > a,.cont_form_sign_up > a  {
-    color: #757575;
-    position: relative;
-    float: left;
-    margin: 10px;
-    margin-left: 30px;
-    font-family: "BPG Nino Mtavruli Bold", sans-serif;
-  }
-  .material-icons {
-    color: #fff;
-  }
+	}
+	.login-page .box.slide-active .form{
+		right:auto;
+	}
+}
+
+
+
+
+
+
