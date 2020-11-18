@@ -137,8 +137,8 @@
         font-size: 12px;
     }
     .social {
-        margin-top: 10px;
-        margin-left: 110px;
+        margin-top: 25px;
+        margin-left: 3px;
         margin-bottom: 22px;
     }
 }
@@ -188,37 +188,43 @@
         flex-wrap: wrap;
     }
     .fbox{
+        margin-top: 22px;
         margin-right: 14px;
     }
     .fcont{
+        margin-top: 20px;
         margin-right: 48px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* Login Page For PC */
-@media screen and (max-width: 1000px) {
-    .cont_back_info {
-        height: 270px;
+@media screen and (max-width: 400px) {
+    .social {
+        margin-top: 35px;
+        margin-left: 3px;
     }
-    .cont_forms {
-    width: 320px;
-    height: 270px;
+}
+@media screen and (max-width: 390px) {
+    .htext {
+        top: 100px;
+        font-size: 20px;
+        left: 60px;
     }
-    .cont_forms_active_login {
-        height: 420px;
+    .htext:hover {
+        font-size: 22px;
     }
-    .cont_forms_active_sign_up {
-        height: 420px;
+    .home {
+        top: 125px;
+        left: 60px;
+        font-size: 15px;
+    }
+    .button {
+        top: -199px;
+        left: -89px;
+        font-size: 10px;
+        width: 116px;
+    }
+
+
+    .fbox {
+        margin-right: 0px;
     }
 }

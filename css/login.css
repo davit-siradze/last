@@ -163,7 +163,7 @@ ul {
 .login-page{
 	min-height: 100vh;
 	padding:15px;
-	background-color: #eeeeee;
+	background-color: #fff;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -341,6 +341,7 @@ ul {
 	}
 	.login-page .box,
 	.login-page .box.slide-active{
+        margin-top: 30px;
         background-position: center;
 	}
 	.login-page .box .left h3, .login-page .box .right h3{
@@ -350,6 +351,90 @@ ul {
 	.login-page .box.slide-active .form{
 		right:auto;
 	}
+}
+
+footer {
+  background-color: #ff3449;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'BPG Nino Mtavruli';
+}
+.footerinfo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+}
+.fbox {
+  margin: 75px 0px 0 0px;
+}
+.fbox h2 {
+  font-size: 30px;
+  color: #ffffffad;
+  font-family: 'BPG Nino Mtavruli Bold';
+}
+.fbox p{
+  color: #fff;
+  width: 280px;
+  margin: 25px 0;
+  font-family: 'BPG Nino Mtavruli';
+}
+.fcont {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+.fcont p {
+  color: #ffffffad;
+  font-family: 'BPG Nino Mtavruli Bold';
+  font-size: 30px;
+}
+.contnav {
+  width: 210px;
+  display: flex;
+  margin-top: 16px;
+}
+.mail {
+  color: #fff;
+}
+.fmail {
+  margin-left: 15px;
+  font-size: 15px;
+  font-family: 'BPG Nino Mtavruli';
+  color: #fff;
+}
+.fcontmail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+.social p {
+  font-size: 30px;
+  color: #ffffffad;
+  font-family: 'BPG Nino Mtavruli Bold'
+}
+.soc {
+  width: 210px;
+  display: flex;
+  font-family: 'BPG Nino Mtavruli';
+  margin-top: 16px;
+}
+.fab {
+  color: #fff;
+  font-size: 15px;
+}
+.soca {
+  margin-top: 3px;
+  margin-left: 15px;
+  color: #fff;
+  font-size: 15px;
 }
 
 
