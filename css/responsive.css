@@ -206,19 +206,19 @@
     .htext {
         top: 100px;
         font-size: 20px;
-        left: 60px;
+        left: 45px;
     }
     .htext:hover {
         font-size: 22px;
     }
     .home {
         top: 125px;
-        left: 60px;
+        left: 45px;
         font-size: 15px;
     }
     .button {
         top: -199px;
-        left: -89px;
+        left: -104px;
         font-size: 10px;
         width: 116px;
     }
