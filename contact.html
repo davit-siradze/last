@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
     <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-bold/css/bpg-nino-mtavruli-bold.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://kit.fontawesome.com/97ad557998.js" crossorigin="anonymous"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -54,9 +57,13 @@
         </div>           
 
     </header>
-    <section>
+   <section>
       
-    </section>
+  
+
+
+   
+   </section>
     <script type="text/javascript">
 
         var t1 = new TimelineMax({paused: true});
@@ -89,7 +96,13 @@
            t1.reversed(!t1.reversed());
            
         });
-        
+        $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
         
         </script>
 </body>
