@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
+    <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-bold/css/bpg-nino-mtavruli-bold.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://kit.fontawesome.com/97ad557998.js" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>აქ საქართველოა</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">
+            <img src="img/logo.png" alt="LogoImage">
+        </a>
+        <div class="login">
+          <div class="youaracc">
+            <a class="acca" href="login.html">
+              <i class="far fa-user account"></i>
+            </a>
+          </div>
+        </div>
+        <div class="toggle-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+       </div>
+   
+       <div class="menu">
+            <div class="data">
+                 <ul class="ulmen">
+                      <li class="navname">ნავიგაცია</li>
+                      <li class="nav-li"><a class="a1" href="index.html">მთავარი</a></li>
+                      <li class="nav-li"><a class="a1" href=".servicesection">სერვისი</a></li>
+                      <li class="nav-li"><a class="a1" href="history.html">ისტორია</a></li>
+                      <li class="nav-li"><a class="a1" href="contact.html">კონტაქტი</a></li>
+                      <li class="flag">
+                        <h4 class="flagh4">ენის განსაზღვრა</h4>
+                         <a href="index.html"> <img class="geo" src="img/flag/geo.svg" alt=""></a>
+                         <a href="eng.html" target="_blank"> <img class="eng" src="img/flag/eng.png" alt=""></a>
+                        
+                      </li>
+                 </ul>
+            </div>
+       </div>
+    </div>           
+    </header>
+    <section>
+        <div class="textcont">
+            <h1 class="texth1"> მოგესალმებით საიტის ადმინისტრაცია გატყობინებთ რომ ონლაინ სერვიცი დროებით
+              <span class="txt-type" data-wait="3000" data-words='["გათიშულია", "მადლობა", "ყურადღებისთვის"]'></span>
+            </h1>
+            <h2 class="texth2">ეწვიეთ <a href="index.html">მთავარ გვერდს</a></h2>
+          </div>
+          
+    </section>
+    <script src="java/main.js"></script>
+      <script type="text/javascript">
+
+        var t1 = new TimelineMax({paused: true});
+        
+        t1.to(".one", 0.8, {
+           y: 6,
+           rotation: 45,
+           ease: Expo.easeInOut
+        });
+        t1.to(".two", 0.8, {
+           y: -6,
+           rotation: -45,
+           ease: Expo.easeInOut,
+           delay: -0.8
+        });
+         
+        t1.to(".menu", 2, {
+           top: "0%",
+           ease: Expo.easeInOut,
+           delay: -2
+        });
+        
+        t1.staggerFrom(".menu ul li", 1.3, {x: -200, opacity: 0, ease:Expo.easeOut}, 0.1);
+        
+        t1.reverse();
+        $(document).on("click", ".toggle-btn", function() {
+           t1.reversed(!t1.reversed());
+        });
+        $(document).on("click", "a1", function() {
+           t1.reversed(!t1.reversed());
+           
+        });
+        
+        
+        
+        </script>
+</header>
+</body>
+</html>
