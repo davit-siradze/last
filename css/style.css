@@ -101,6 +101,7 @@ ul {
     font-size: 42px;
     text-align: center;
     margin-top: 14px;
+
     
 }
 .a1:hover {
@@ -153,6 +154,7 @@ ul {
     color: #ef0c2391;
     transition: all ease 0.6s;
 }
+
 
 .banner img{
     width: 100%;
@@ -514,7 +516,7 @@ audio {
   
   @media(max-width: 500px) {
         .texth1 {
-      font-size: 2.5rem;
+      font-size: 20px;
     }
   
     .texth2 {

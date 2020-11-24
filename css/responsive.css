@@ -228,3 +228,8 @@
         margin-right: 0px;
     }
 }
+@media screen and (max-width: 340px){ 
+    .booktext p , .booktext span , .booktext h1 {
+        display: none;
+    }
+}
